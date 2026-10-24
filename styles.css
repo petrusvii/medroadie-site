@@ -127,6 +127,17 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .founding { margin-top: 26px; text-align: center; }
 .founding a { color: var(--amber); font-weight: 700; }
 
+.price-box { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; margin-top: 36px; background: var(--black-2); border: 2px solid var(--amber); border-radius: 18px; padding: 40px; box-shadow: 0 0 60px rgba(245,165,36,.15); }
+.price-from { text-transform: uppercase; letter-spacing: .14em; font-weight: 800; font-size: 13px; color: var(--muted-dark) !important; margin: 0; }
+.price-main .price { font-size: 64px; }
+.price-main .btn { margin-top: 10px; }
+.price-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.price-list li { color: #D9DCE2; padding-left: 26px; position: relative; }
+.price-list li::before { content: "✓"; position: absolute; left: 0; color: var(--amber); font-weight: 800; }
+.price-list li.extra { color: var(--muted-dark); font-size: 15px; }
+.price-list li.extra::before { content: "+"; }
+@media (max-width: 760px) { .price-box { grid-template-columns: 1fr; padding: 26px; } .price-main .price { font-size: 52px; } }
+
 /* FAQ */
 .faq { max-width: 860px; }
 details { border-bottom: 1px solid var(--line); padding: 18px 0; }
