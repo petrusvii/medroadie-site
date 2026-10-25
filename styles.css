@@ -84,7 +84,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .story { text-align: center; max-width: 860px; }
 
 .hero-visual { position: relative; }
-.hero-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 24px; box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 120px rgba(245,165,36,.15); }
+.hero-ipad { display: block; width: 100%; height: auto; transform: rotate(-1.5deg); filter: drop-shadow(0 0 70px rgba(245,165,36,.22)); }
 .how-shot { display: block; width: min(760px, 100%); height: auto; margin: 44px auto 0; }
 .quote { font-family: var(--stencil); font-size: clamp(26px, 3.4vw, 40px); line-height: 1.15; margin: 0 0 22px; }
 .story-text { color: var(--muted); font-size: 18px; }
