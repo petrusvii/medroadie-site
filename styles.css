@@ -82,15 +82,10 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .checks li { background: rgba(255,255,255,.55); border-radius: 12px; padding: 16px 18px 16px 50px; position: relative; font-size: 16px; }
 .checks li::before { content: "✓"; position: absolute; left: 18px; top: 14px; width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--amber); display: grid; place-items: center; font-size: 13px; font-weight: 900; }
 .story { text-align: center; max-width: 860px; }
-.story-grid { display: grid; grid-template-columns: minmax(0, .8fr) 1.2fr; gap: 56px; align-items: center; max-width: 1100px; }
-.story-grid .story { text-align: left; }
-.story-photo { width: 100%; height: auto; aspect-ratio: 9 / 11; object-fit: cover; border-radius: 22px; box-shadow: 0 20px 50px rgba(23,24,28,.18); }
 
-/* Hero photo with the real app screen in front */
-.hero-visual { position: relative; padding-bottom: 70px; }
+.hero-visual { position: relative; }
 .hero-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 24px; box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 120px rgba(245,165,36,.15); }
-.hero-device { position: absolute; width: 64%; height: auto; left: -12%; bottom: -12px; transform: rotate(-2deg); }
-.how-shot { display: block; width: min(820px, 100%); height: auto; margin: 44px auto 0; }
+.how-shot { display: block; width: min(760px, 100%); height: auto; margin: 44px auto 0; }
 .quote { font-family: var(--stencil); font-size: clamp(26px, 3.4vw, 40px); line-height: 1.15; margin: 0 0 22px; }
 .story-text { color: var(--muted); font-size: 18px; }
 
@@ -163,9 +158,6 @@ details p { color: var(--muted); margin: 10px 0 0; }
   .links { display: none; }
   .nav-row .btn { margin-left: auto; }
   .hero-visual { max-width: 620px; }
-  .hero-device { left: -4%; }
-  .story-grid { grid-template-columns: 1fr; gap: 32px; }
-  .story-photo { aspect-ratio: 4 / 3; max-width: 620px; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
@@ -174,6 +166,5 @@ details p { color: var(--muted); margin: 10px 0 0; }
   .hero { padding: 48px 0 60px; }
   .grid4, .grid3, .steps, .plans, .two { grid-template-columns: 1fr; }
   .brand span { font-size: 22px; }
-  .hero-device { left: 0; width: 72%; }
   .lead { font-size: 18px; }
 }
