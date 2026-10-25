@@ -1,6 +1,6 @@
 // Contact form: sends to Formspree when FORM_ENDPOINT is set, otherwise opens an email to hello@medroadie.com.
 // Set FORM_ENDPOINT to your Formspree form URL, e.g. "https://formspree.io/f/abcdwxyz".
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/mnppjnag";
 const CONTACT_EMAIL = "hello@medroadie.com";
 
 const form = document.getElementById("contact-form");
