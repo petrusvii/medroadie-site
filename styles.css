@@ -105,8 +105,11 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .plan ul { list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 8px; flex: 1; }
 .plan li { color: #D9DCE2; padding-left: 24px; position: relative; font-size: 15.5px; }
 .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--amber); font-weight: 800; }
-.founding { margin-top: 26px; text-align: center; }
-.founding a { color: var(--amber); font-weight: 700; }
+.pilot { margin-top: 26px; display: grid; grid-template-columns: auto 1fr auto; gap: 10px 32px; align-items: center; border: 1px solid var(--amber); border-radius: var(--radius); padding: 24px 28px; background: rgba(245,165,36,.07); }
+.pilot h3 { margin: 0; font-size: 26px; white-space: nowrap; }
+.pilot p { margin: 0; color: var(--muted-dark); }
+.section.dark .pilot .pilot-tag { color: var(--amber); font-weight: 800; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 4px; }
+@media (max-width: 760px) { .pilot { grid-template-columns: 1fr; } .pilot .btn { justify-self: start; } }
 
 .price-box { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; margin-top: 36px; background: var(--black-2); border: 2px solid var(--amber); border-radius: 18px; padding: 40px; box-shadow: 0 0 60px rgba(245,165,36,.15); }
 .price-from { text-transform: uppercase; letter-spacing: .14em; font-weight: 800; font-size: 13px; color: var(--muted-dark) !important; margin: 0; }
